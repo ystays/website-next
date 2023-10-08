@@ -7,14 +7,14 @@ export default function Footer() {
         A project by{" "}
         <a
           className="font-semibold text-gray-600 underline-offset-4 transition-colors hover:underline"
-          href="https://twitter.com/steventey"
+          href="https://github.com/ystays"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Steven Tey
+          Yi Sheng Tay
         </a>
       </p>
-      <a
+      {/* <a
         href="https://www.buymeacoffee.com/steventey"
         target="_blank"
         rel="noopener noreferrer"
@@ -22,7 +22,7 @@ export default function Footer() {
       >
         <BuyMeACoffee className="h-6 w-6" />
         <p className="font-medium text-gray-600">Buy me a coffee</p>
-      </a>
+      </a> */}
     </div>
   );
 }

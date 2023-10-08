@@ -1,5 +1,5 @@
 import Card from "@/components/home/card";
-import { LINKEDIN_URL } from "@/lib/constants";
+import { LINKEDIN_URL, GITHUB_URL } from "@/lib/constants";
 import { Github, Twitter } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
@@ -7,26 +7,26 @@ import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
 
 export default async function Home() {
-  const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/steven-tey/precedent",
-    {
-      ...(process.env.GITHUB_OAUTH_TOKEN && {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      }),
-      // data will revalidate every 24 hours
-      next: { revalidate: 86400 },
-    },
-  )
-    .then((res) => res.json())
-    .catch((e) => console.log(e));
+  // const { stargazers_count: stars } = await fetch(
+  //   "https://api.github.com/repos/steven-tey/precedent",
+  //   {
+  //     ...(process.env.GITHUB_OAUTH_TOKEN && {
+  //       headers: {
+  //         Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
+  //         "Content-Type": "application/json",
+  //       },
+  //     }),
+  //     // data will revalidate every 24 hours
+  //     next: { revalidate: 86400 },
+  //   },
+  // )
+  //   .then((res) => res.json())
+  //   .catch((e) => console.log(e));
 
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        <a
+        {/* <a
           href="https://github.com/ystays"
           target="_blank"
           rel="noreferrer"
@@ -36,7 +36,7 @@ export default async function Home() {
           <p className="text-sm font-semibold text-[#1d9bf0]">
             My Github
           </p>
-        </a>
+        </a> */}
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -59,7 +59,7 @@ export default async function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg
+            {/* <svg
               className="h-4 w-4 group-hover:text-black"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -72,10 +72,10 @@ export default async function Home() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
-            </svg>
+            </svg> */}
             <p>LinkedIn</p>
           </a>
-          <a
+          {/* <a
             className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
             href="https://github.com/ystays"
             target="_blank"
@@ -86,6 +86,14 @@ export default async function Home() {
               <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
               <span className="font-semibold">{nFormatter(stars)}</span>
             </p>
+          </a> */}
+          <a
+            className="group flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black"
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>Github</p>
           </a>
         </div>
       </div>

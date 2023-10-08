@@ -25,14 +25,20 @@ export default function NavBar({ session }: { session: Session | null }) {
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
               src="/logo.png"
-              alt="Precedent logo"
+              alt="logo"
               width="30"
               height="30"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>Precedent</p>
+            <p>ystay</p>
           </Link>
-          <div>
+          <div className="flex items-center gap-x-8">
+            <Link href="/about" className="flex items-center font-display">
+              <p>About</p>
+            </Link>
+            <Link href="/blog" className="flex items-center font-display">
+              <p>Blog</p>
+            </Link>
             {session ? (
               <UserDropdown session={session} />
             ) : (
@@ -43,6 +49,7 @@ export default function NavBar({ session }: { session: Session | null }) {
                 Sign In
               </button>
             )}
+
           </div>
         </div>
       </div>
