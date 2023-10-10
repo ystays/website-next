@@ -1,16 +1,17 @@
 import Card from "@/components/home/card"
 import ComponentGrid from "@/components/home/component-grid"
 import WebVitals from "@/components/home/web-vitals"
+import Image from "next/image"
 
 export default async function About() {
     return(
         <div className="z-10 w-full max-w-xl px-5 xl:px-0">
       <section>
         <p>Hi.
-          I'm a 2023 Computer Science graduate from UCLA.</p>
+          I&apos;m a 2023 Computer Science graduate from UCLA.</p>
         <small>
           (This is my personal website. Check out {' '}
-          <a href="https://linkedin.com/in/yi-sheng-tay">my LinkedIn page</a>.)
+            <a href="https://linkedin.com/in/yi-sheng-tay">my LinkedIn page</a>.)
         </small>
         <br/>
         <br/>
@@ -53,7 +54,7 @@ const features = [{
     title: "...",
     description:
       "Words, words, words",
-    demo: <img alt="profile photo" src="/profile.jpg" width={100} height={100}></img>,
+    demo: <Image alt="profile photo" src="/profile.jpg" width={100} height={100}></Image>,
     large: false,
     fullWidth: true,
 },]
