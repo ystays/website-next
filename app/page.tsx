@@ -1,10 +1,12 @@
 import Card from "@/components/home/card";
 import { LINKEDIN_URL, GITHUB_URL } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
+import { Github, Twitter, Linkedin } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
+
+import { Flex, Button } from "@radix-ui/themes";
 
 export default async function Home() {
   // const { stargazers_count: stars } = await fetch(
@@ -59,20 +61,7 @@ export default async function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* <svg
-              className="h-4 w-4 group-hover:text-black"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 4L20 20H4L12 4Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg> */}
+            <Linkedin />
             <p>LinkedIn</p>
           </a>
           {/* <a
@@ -93,12 +82,13 @@ export default async function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <Github />
             <p>Github</p>
           </a>
         </div>
       </div>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {features.map(({ title, description, demo, large }) => (
+        {features.map(({ title, description, demo, large, fullWidth }) => (
           <Card
             key={title}
             title={title}
@@ -111,6 +101,7 @@ export default async function Home() {
               )
             }
             large={large}
+            fullWidth={fullWidth}
           />
         ))}
       </div>
@@ -120,37 +111,41 @@ export default async function Home() {
 
 const features = [
   {
-    title: "Beautiful, reusable components",
+    title: "Beautiful, reusable words",
     description:
-      "Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Framer Motion](https://framer.com/motion)",
+      "Words, words, words",
+    fullWidth: true,
+  },
+  {
+    title: "Portfolio first",
+    description:
+      "Stellar performance.",
+    demo: <WebVitals />,
     large: true,
   },
   {
-    title: "Performance first",
+    title: "Say hello",
     description:
-      "Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.",
-    demo: <WebVitals />,
-  },
-  {
-    title: "One-click Deploy",
-    description:
-      "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
+      "Hello",
     demo: (
       <a href={LINKEDIN_URL}>
-        <Image
+        {/* <Image
           src="https://vercel.com/button"
-          alt="Deploy with Vercel"
+          alt="hi"
           width={120}
           height={30}
           unoptimized
-        />
+        /> */}
+        <Flex align="center" gap="3">
+          <Button variant="solid">hi</Button>
+        </Flex>
       </a>
     ),
   },
   {
-    title: "Built-in Auth + Database",
+    title: "Authentication works",
     description:
-      "Precedent comes with authentication and database via [Auth.js](https://authjs.dev/) + [Prisma](https://prisma.io/)",
+      "Don't believe me? Try it.",
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
@@ -161,7 +156,7 @@ const features = [
   {
     title: "Hooks, utilities, and more",
     description:
-      "Precedent offers a collection of hooks, utilities, and `@vercel/og`",
+      "A collection of hooks, utilities, and `@vercel/og`",
     demo: (
       <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
         <span className="font-mono font-semibold">useIntersectionObserver</span>
@@ -172,5 +167,6 @@ const features = [
         <span className="font-mono font-semibold">truncate</span>
       </div>
     ),
+    large: true,
   },
 ];
