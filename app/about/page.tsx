@@ -1,11 +1,16 @@
 import Card from "@/components/home/card"
 import ComponentGrid from "@/components/home/component-grid"
 import WebVitals from "@/components/home/web-vitals"
-import Image from "next/image"
+// import Image from "next/image"
+import Image from "@/components/home/image-card"
 
 export default async function About() {
     return(
-        <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+      <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+
+        <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-0 xl:px-0">
+          <Image alt="profile photo" src="/profile.jpg"></Image>
+        </div>
       <section>
         <p>Hi.
           I&apos;m a 2023 Computer Science graduate from UCLA.</p>
@@ -27,34 +32,6 @@ export default async function About() {
         <h2>In progress...</h2>
       </section>
 
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        {features.map(({ title, description, demo, large, fullWidth }) => (
-          <Card
-            key={title}
-            title={title}
-            description={description}
-            demo={
-              title === "Beautiful, reusable components" ? (
-                <ComponentGrid />
-              ) : (
-                demo
-              )
-            }
-            large={large}
-            fullWidth={fullWidth}
-          />
-        ))}
-      </div>
-
       </div>
     )
 }
-
-const features = [{
-    title: "...",
-    description:
-      "Words, words, words",
-    demo: <Image alt="profile photo" src="/profile.jpg" width={100} height={100}></Image>,
-    large: false,
-    fullWidth: true,
-},]
