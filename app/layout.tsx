@@ -11,15 +11,15 @@ import { Theme } from "@radix-ui/themes";
 export const metadata = {
   title: "ystays.com",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+    "ys' personal website",
   twitter: {
     card: "summary_large_image",
-    title: "Precedent - Building blocks for your Next.js project",
+    title: "ystays.com",
     description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-    creator: "@steventey",
+      "ys' personal website",
+    creator: "@theystayhere",
   },
-  metadataBase: new URL("https://precedent.dev"),
+  metadataBase: new URL("https://ystays.com"),
   themeColor: "#FFF",
 };
 
