@@ -9,7 +9,7 @@ import { Suspense } from "react";
 import { Theme } from "@radix-ui/themes";
 
 export const metadata = {
-  title: "ystay.org",
+  title: "ystays.com",
   description:
     "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
   twitter: {

@@ -30,7 +30,7 @@ export default function NavBar({ session }: { session: Session | null }) {
               height="30"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>ystay</p>
+            <p>ystays</p>
           </Link>
           <div className="flex items-center gap-x-8">
             <Link href="/about" className="flex items-center font-display">

@@ -43,7 +43,7 @@ export default async function Home() {
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          ystay.org
+          hi.
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
@@ -117,18 +117,19 @@ const features = [
     fullWidth: true,
   },
   {
-    title: "Portfolio first",
+    title: "Projects",
     description:
       "Stellar performance.",
     demo: <WebVitals />,
     large: true,
   },
   {
-    title: "Say hello",
+    title: "Resume",
     description:
-      "Hello",
+      "One page. That's it.",
     demo: (
-      <a href={LINKEDIN_URL}>
+      <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+      <a href="YiShengTay_Resume.pdf">
         {/* <Image
           src="https://vercel.com/button"
           alt="hi"
@@ -136,10 +137,18 @@ const features = [
           height={30}
           unoptimized
         /> */}
-        <Flex align="center" gap="3">
-          <Button variant="solid">hi</Button>
-        </Flex>
+
+      <img className="rounded-lg" src="YiShengTay_Resume.jpg" alt="image description" height={240} width={160} />
       </a>
+      {/* <figcaption className="absolute px-4 text-lg text-black bottom-6 bg-white min-w-full">
+        <p>Resume</p>
+      </figcaption> */}
+        {/* <Flex align="center" gap="3">
+          <Button variant="solid" className="border-black border-2 rounded-2xl py-2 px-4 ">Click here</Button>
+        </Flex>
+      </a> */}
+    </figure>
+
     ),
   },
   {
