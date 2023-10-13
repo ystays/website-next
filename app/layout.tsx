@@ -11,12 +11,12 @@ import { Theme } from "@radix-ui/themes";
 export const metadata = {
   title: "ystays.com",
   description:
-    "ys' personal website",
+    "ys' personal website, portfolio and blog. An ambitious project.",
   twitter: {
     card: "summary_large_image",
     title: "ystays.com",
     description:
-      "ys' personal website",
+      "ys' personal website, portfolio and blog. An ambitious project.",
     creator: "@theystayhere",
   },
   metadataBase: new URL("https://ystays.com"),
