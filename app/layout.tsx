@@ -17,7 +17,21 @@ export const metadata = {
     title: "ystays.com",
     description:
       "ys' personal website, portfolio and blog. An ambitious project.",
+    images: ["/logo.png"],
     creator: "@theystayhere",
+  },
+  openGraph: {
+    title: "ystays.com",
+    description: 
+     "ys' personal website, portfolio and blog. An ambitious project.",
+    url: "https://ystays.com",
+    siteName: "ystays",
+    images: [{
+      url: '/logo.png',
+      width: 800,
+      height: 800,
+    },],
+    type: "website",
   },
   metadataBase: new URL("https://ystays.com"),
   themeColor: "#FFF",

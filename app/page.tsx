@@ -138,7 +138,7 @@ const features = [
           unoptimized
         /> */}
 
-      <img className="rounded-lg" src="YiShengTay_Resume.jpg" alt="image description" height={240} width={160} />
+      <img className="rounded-lg" src="YiShengTay_Resume.jpg" alt="image of resume" height={240} width={160} />
       </a>
       {/* <figcaption className="absolute px-4 text-lg text-black bottom-6 bg-white min-w-full">
         <p>Resume</p>
@@ -157,23 +157,22 @@ const features = [
       "Don't believe me? Try it.",
     demo: (
       <div className="flex items-center justify-center space-x-20">
-        <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
-        <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} />
+        <Image alt="ystays.com logo" src="/logo.png" width={150} height={150} />
       </div>
     ),
   },
   {
-    title: "Hooks, utilities, and more",
+    title: "Less, even less, and more",
     description:
-      "A collection of hooks, utilities, and `@vercel/og`",
+      "A collection of lists",
     demo: (
-      <div className="grid grid-flow-col grid-rows-3 gap-10 p-10">
-        <span className="font-mono font-semibold">useIntersectionObserver</span>
-        <span className="font-mono font-semibold">useLocalStorage</span>
-        <span className="font-mono font-semibold">useScroll</span>
-        <span className="font-mono font-semibold">nFormatter</span>
-        <span className="font-mono font-semibold">capitalize</span>
-        <span className="font-mono font-semibold">truncate</span>
+      <div className="grid grid-flow-col grid-rows-2 gap-20 p-10">
+        <span className="font-mono font-semibold">the</span>
+        <span className="font-mono font-semibold">is</span>
+        <span className="font-mono font-semibold">medium</span>
+        <span className="font-mono font-semibold">the</span>
+        <span className="font-mono font-semibold">truly</span>
+        <span className="font-mono font-semibold">message</span>
       </div>
     ),
     large: true,
