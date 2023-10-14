@@ -8,7 +8,8 @@ import { nFormatter } from "@/lib/utils";
 
 import { Flex, Button } from "@radix-ui/themes";
 
-export default async function Home() {
+
+export default function Home() {
   // const { stargazers_count: stars } = await fetch(
   //   "https://api.github.com/repos/steven-tey/precedent",
   //   {
@@ -24,6 +25,20 @@ export default async function Home() {
   // )
   //   .then((res) => res.json())
   //   .catch((e) => console.log(e));
+
+  // let randPage = "";
+
+  // function randomPage() {
+  //   var myPages = [
+  //     'about',
+  //     'blog',
+  //     'portfolio'
+  //   ];
+    
+  //   randPage = myPages[Math.floor(Math.random()*myPages.length)];
+  //   window.location.replace(randPage);
+  // }
+
 
   return (
     <>
@@ -114,6 +129,13 @@ const features = [
     title: "Beautiful, reusable words",
     description:
       "Words, words, words",
+    demo: (
+      <div className="flex items-center justify-center text-center font-mono font-semibold">
+        <p>
+          When my talk is over, your listening is over. <br/>There is no need to remember what I say; there is no need to understand what I say. <br/>You understand; you have full understanding within yourself. <br/>There is no problem. <br/> - Shunryū Suzuki
+        </p>
+      </div>
+    ),
     fullWidth: true,
   },
   {
@@ -151,16 +173,19 @@ const features = [
 
     ),
   },
-  {
-    title: "Authentication works",
-    description:
-      "Don't believe me? Try it.",
-    demo: (
-      <div className="flex items-center justify-center space-x-20">
-        <Image alt="ystays.com logo" src="/logo.png" width={150} height={150} />
-      </div>
-    ),
-  },
+  // {
+  //   title: "I'm feeling adventurous",
+  //   description:
+  //     "Don't know where to start? Visit a random page on this site.",
+  //   demo: (
+  //     <div className="flex items-center justify-center space-x-20">
+  //       <Flex align="center" gap="3">
+  //         <Button variant="solid" className="border-black border-2 rounded-2xl py-2 px-4">Click here</Button>
+  //       </Flex>
+  //       {/* <Image alt="ystays.com logo" src="/logo.png" width={150} height={150} /> */}
+  //     </div>
+  //   ),
+  // },
   {
     title: "Less, even less, and more",
     description:

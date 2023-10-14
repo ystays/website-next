@@ -6,11 +6,17 @@ import useScroll from "@/lib/hooks/use-scroll";
 import { useSignInModal } from "./sign-in-modal";
 import UserDropdown from "./user-dropdown";
 import { Session } from "next-auth";
+import Popover from "../shared/popover";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
+import { NavigationMenu } from "../navigation-menu";
 
 export default function NavBar({ session }: { session: Session | null }) {
   const { SignInModal, setShowSignInModal } = useSignInModal();
   const scrolled = useScroll(50);
-
+  const [openPopover, setOpenPopover] = useState(false);
+  
   return (
     <>
       <SignInModal />
@@ -39,6 +45,37 @@ export default function NavBar({ session }: { session: Session | null }) {
             <Link href="/blog" className="flex items-center font-display">
               <p>Blog</p>
             </Link>
+
+            {/* <NavigationMenu></NavigationMenu> */}
+
+            <Popover
+              content={
+                <div
+                  onMouseLeave={() => setOpenPopover(!openPopover)} 
+                  className="w-full rounded-md bg-white">
+                  <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
+                    <a href="projects">Projects</a>
+                  </button>
+                  <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
+                    <a href="gallery">Gallery of Words</a>
+                  </button>
+                </div>
+              }
+              openPopover={openPopover}
+              setOpenPopover={setOpenPopover}
+            >
+              <button
+                onMouseEnter={() => setOpenPopover(!openPopover) }
+                // className="flex w-36 items-center justify-between rounded-md border border-gray-300 px-4 py-2 transition-all duration-75 hover:border-gray-800 focus:outline-none active:bg-gray-100"
+                className="flex items-center font-display"
+              >
+                <p>More</p>
+                {/* <ChevronDown
+                  className={`h-4 w-4 text-gray-600 transition-all ${openPopover ? "rotate-180" : ""
+                    }`}
+                /> */}
+              </button>
+            </Popover>
             {session ? (
               <UserDropdown session={session} />
             ) : (
