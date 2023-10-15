@@ -28,17 +28,19 @@ export default function NavBar({ session }: { session: Session | null }) {
         } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
-          <Link href="/" className="flex items-center font-display text-2xl">
-            <Image
-              src="/logo.png"
-              alt="logo"
-              width="30"
-              height="30"
-              className="mr-2 rounded-sm"
-            ></Image>
-            <p>ystays</p>
-          </Link>
-          <div className="flex items-center gap-x-8">
+          <div>
+            <Link href="/" className="flex items-center font-display text-2xl">
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width="30"
+                height="30"
+                className="mr-2 rounded-sm"
+              ></Image>
+              <h1>ystays</h1>
+            </Link>
+          </div>
+          <div className="flex items-center gap-x-3 text-sm">
             <Link href="/about" className="flex items-center font-display">
               <p>About</p>
             </Link>
