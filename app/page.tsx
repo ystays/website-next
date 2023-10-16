@@ -102,6 +102,7 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <section>
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo, large, fullWidth }) => (
           <Card
@@ -120,6 +121,7 @@ export default function Home() {
           />
         ))}
       </div>
+      </section>
     </>
   );
 }
@@ -130,7 +132,7 @@ const features = [
     description:
       "Words, words, words",
     demo: (
-      <div className="flex items-center justify-center text-center font-mono font-semibold">
+      <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
         <p>
           When my talk is over, your listening is over. <br/>There is no need to remember what I say; there is no need to understand what I say. <br/>You understand; you have full understanding within yourself. <br/>There is no problem. <br/> - Shunryū Suzuki
         </p>
@@ -196,7 +198,7 @@ const features = [
         <span className="font-mono font-semibold">is</span>
         <span className="font-mono font-semibold">medium</span>
         <span className="font-mono font-semibold">the</span>
-        <span className="font-mono font-semibold">truly</span>
+        <span className="font-mono font-semibold">really</span>
         <span className="font-mono font-semibold">message</span>
       </div>
     ),

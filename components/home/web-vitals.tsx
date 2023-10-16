@@ -6,6 +6,7 @@ import CountingNumbers from "@/components/shared/counting-numbers";
 export default function WebVitals() {
   return (
     <div className="relative h-full w-full">
+    <a href="/projects">
       <motion.svg
         className="absolute inset-0 m-auto"
         viewBox="0 0 100 100"
@@ -34,6 +35,7 @@ export default function WebVitals() {
         duration={2500}
         className="absolute inset-0 mx-auto flex items-center justify-center font-display text-5xl text-green-500"
       />
+    </a>
     </div>
   );
 }

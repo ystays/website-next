@@ -6,22 +6,25 @@ export default function Card({
   description,
   demo,
   large,
+  tall,
   fullWidth,
 }: {
   title: string;
   description: string;
   demo: ReactNode;
   large?: boolean;
+  tall?: boolean;
   fullWidth?: boolean;
 }) {
   return (
     <div
-      className={`relative col-span-1 h-96 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md ${
-        large ? "md:col-span-2" : ""}
-        ${fullWidth ? "md:col-span-3" : ""
+      className={`relative col-span-1 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md 
+      ${large ? "md:col-span-2" : ""}
+      ${tall ? "h-[30rem]" : "h-96"}
+      ${fullWidth ? "md:col-span-3" : ""
       }`}
     >
-      <div className="flex h-60 items-center justify-center">{demo}</div>
+      <div className={`flex items-center justify-center ${tall ? "h-[25rem]" : "h-60"}`}>{demo}</div>
       <div className="mx-auto max-w-md text-center">
         <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
           {title}
