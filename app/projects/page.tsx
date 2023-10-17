@@ -41,7 +41,7 @@ const features = [{
   demo: (
     <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
       <a href="https://storymaps.arcgis.com/stories/f552e19611a549d1b0a145a5a5120a4a">
-      <img className="rounded-lg" src="Immigration_Nationalities_Inequality_Cover.jpg" alt="image of Immigration, Nationalities & Inequality StoryMap cover" height={250} width={250} />
+      <img className="rounded-lg" src="/Immigration_Nationalities_Inequality_Cover.jpg" alt="image of Immigration, Nationalities & Inequality StoryMap cover" height={250} width={250} />
       </a>
     </figure>
   ),
@@ -52,7 +52,7 @@ const features = [{
 {
   title: "Weather App",
   description: "Written in Node.js",
-  demo: <iframe src="https://ystays-weather-website.herokuapp.com/" width="95%" height="100%" scrolling="no" allowFullScreen allow="geolocation"></iframe>,
+  demo: <iframe src="https://ystays-weather-website.herokuapp.com/" width="95%" height="100%" allowFullScreen allow="geolocation"></iframe>,
   large: undefined,
   tall: true,
   fullWidth: undefined,

@@ -7,6 +7,8 @@ import Image from "next/image";
 import { nFormatter } from "@/lib/utils";
 
 import { Flex, Button } from "@radix-ui/themes";
+import Link from "next/link";
+
 
 
 export default function Home() {
@@ -128,19 +130,6 @@ export default function Home() {
 
 const features = [
   {
-    title: "Beautiful, reusable words",
-    description:
-      "Words, words, words",
-    demo: (
-      <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
-        <p>
-          When my talk is over, your listening is over. <br/>There is no need to remember what I say; there is no need to understand what I say. <br/>You understand; you have full understanding within yourself. <br/>There is no problem. <br/> - Shunryū Suzuki
-        </p>
-      </div>
-    ),
-    fullWidth: true,
-  },
-  {
     title: "Projects",
     description:
       "Stellar performance.",
@@ -152,7 +141,7 @@ const features = [
     description:
       "One page. That's it.",
     demo: (
-      <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+      <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter blur-sm hover:filter-none">
       <a href="YiShengTay_Resume.pdf">
         {/* <Image
           src="https://vercel.com/button"
@@ -174,6 +163,21 @@ const features = [
     </figure>
 
     ),
+  },
+  {
+    title: "Beautiful, reusable words",
+    description:
+      "A gallery of words",
+    demo: (
+      <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
+        <a href="/gallery" className="transition duration-300 hover:text-blue-500">
+        <p>
+          When my talk is over, your listening is over. <br/>There is no need to remember what I say; there is no need to understand what I say. <br/>You understand; you have full understanding within yourself. <br/>There is no problem. <br/> - Shunryū Suzuki
+        </p>
+        </a>
+      </div>
+    ),
+    fullWidth: true,
   },
   // {
   //   title: "I'm feeling adventurous",
