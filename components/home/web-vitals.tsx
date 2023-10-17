@@ -5,7 +5,7 @@ import CountingNumbers from "@/components/shared/counting-numbers";
 
 export default function WebVitals() {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-full w-full transition hover:bg-green-50 rounded-lg">
     <a href="/projects">
       <motion.svg
         className="absolute inset-0 m-auto"
@@ -33,7 +33,7 @@ export default function WebVitals() {
       <CountingNumbers
         value={100}
         duration={2500}
-        className="absolute inset-0 mx-auto flex items-center justify-center font-display text-5xl text-green-500 transition duration-300 hover:text-green-300"
+        className="absolute inset-0 mx-auto flex items-center justify-center font-display text-5xl text-green-500 transition duration-300 hover:text-green-200"
       />
     </a>
     </div>
