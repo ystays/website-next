@@ -105,7 +105,7 @@ export default function Home() {
         </div>
       </div>
       <section>
-      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+      <div className="my-10 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo, large, fullWidth }) => (
           <Card
             key={title}
@@ -143,15 +143,7 @@ const features = [
     demo: (
       <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter blur-sm hover:filter-none">
       <a href="YiShengTay_Resume.pdf">
-        {/* <Image
-          src="https://vercel.com/button"
-          alt="hi"
-          width={120}
-          height={30}
-          unoptimized
-        /> */}
-
-      <img className="rounded-lg" src="YiShengTay_Resume.jpg" alt="image of resume" height={240} width={160} />
+      <Image className="rounded-lg" src="/YiShengTay_Resume.jpg" alt="image of resume" height={240} width={160} />
       </a>
       {/* <figcaption className="absolute px-4 text-lg text-black bottom-6 bg-white min-w-full">
         <p>Resume</p>
