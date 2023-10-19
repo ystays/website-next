@@ -9,8 +9,6 @@ import { nFormatter } from "@/lib/utils";
 import { Flex, Button } from "@radix-ui/themes";
 import Link from "next/link";
 
-
-
 export default function Home() {
   // const { stargazers_count: stars } = await fetch(
   //   "https://api.github.com/repos/steven-tey/precedent",
@@ -60,7 +58,7 @@ export default function Home() {
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          hi.
+          Hello.
         </h1>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
@@ -189,14 +187,16 @@ const features = [
     description:
       "A collection of lists",
     demo: (
-      <div className="grid grid-flow-col grid-rows-2 gap-20 p-10">
-        <span className="font-mono font-semibold">the</span>
-        <span className="font-mono font-semibold">is</span>
-        <span className="font-mono font-semibold">medium</span>
-        <span className="font-mono font-semibold">the</span>
-        <span className="font-mono font-semibold">really</span>
-        <span className="font-mono font-semibold">message</span>
-      </div>
+      <a href="/gallery" className="transition duration-300 hover:text-blue-500">
+        <div className="grid grid-flow-col grid-rows-2 gap-20 p-10">
+          <span className="font-mono font-semibold">the</span>
+          <span className="font-mono font-semibold">is</span>
+          <span className="font-mono font-semibold">medium</span>
+          <span className="font-mono font-semibold">the</span>
+          <span className="font-mono font-semibold">really</span>
+          <span className="font-mono font-semibold">message</span>
+        </div>
+      </a>
     ),
     large: true,
   },
