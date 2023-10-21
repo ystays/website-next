@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+      <div className="z-10 w-full max-w-xl px-5 xl:px-0 h-[calc(100vh-170px)] grid items-center">
         {/* <a
           href="https://github.com/ystays"
           target="_blank"
