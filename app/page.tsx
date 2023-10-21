@@ -172,10 +172,10 @@ const features = [
   {
     title: "Beautiful, reusable words",
     description:
-      "A gallery of words",
+      "Blog",
     demo: (
       <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
-        <a href="/gallery" className="transition duration-300 hover:text-blue-500">
+        <a href="/blog" className="transition duration-300 hover:text-blue-500">
         <p>
           When my talk is over, your listening is over. <br/>There is no need to remember what I say; there is no need to understand what I say. <br/>You understand; you have full understanding within yourself. <br/>There is no problem. <br/> - Shunryū Suzuki
         </p>
@@ -197,22 +197,22 @@ const features = [
   //     </div>
   //   ),
   // },
-  {
-    title: "Less, even less, and more",
-    description:
-      "A collection of lists",
-    demo: (
-      <a href="/gallery" className="transition duration-300 hover:text-blue-500">
-        <div className="grid grid-flow-col grid-rows-2 gap-20 p-10">
-          <span className="font-mono font-semibold">the</span>
-          <span className="font-mono font-semibold">is</span>
-          <span className="font-mono font-semibold">medium</span>
-          <span className="font-mono font-semibold">the</span>
-          <span className="font-mono font-semibold">really</span>
-          <span className="font-mono font-semibold">message</span>
-        </div>
-      </a>
-    ),
-    large: true,
-  },
+  // {
+  //   title: "Less, even less, and more",
+  //   description:
+  //     "A collection of lists",
+  //   demo: (
+  //     <a href="/gallery" className="transition duration-300 hover:text-blue-500">
+  //       <div className="grid grid-flow-col grid-rows-2 gap-20 p-10">
+  //         <span className="font-mono font-semibold">the</span>
+  //         <span className="font-mono font-semibold">is</span>
+  //         <span className="font-mono font-semibold">medium</span>
+  //         <span className="font-mono font-semibold">the</span>
+  //         <span className="font-mono font-semibold">really</span>
+  //         <span className="font-mono font-semibold">message</span>
+  //       </div>
+  //     </a>
+  //   ),
+  //   large: true,
+  // },
 ];
