@@ -9,6 +9,9 @@ import { nFormatter } from "@/lib/utils";
 import { Flex, Button } from "@radix-ui/themes";
 import Link from "next/link";
 
+import getPostMetadata from "../components/posts/getPostMetadata";
+import PostPreview from "../components/posts/PostPreview";
+
 export default function Home() {
   // const { stargazers_count: stars } = await fetch(
   //   "https://api.github.com/repos/steven-tey/precedent",
@@ -39,6 +42,11 @@ export default function Home() {
   //   window.location.replace(randPage);
   // }
 
+
+  const postMetadata = getPostMetadata();
+  const postPreviews = postMetadata.map((post) => (
+    <PostPreview key={post.slug} {...post} />
+  ));
 
   return (
     <>
@@ -122,6 +130,13 @@ export default function Home() {
         ))}
       </div>
       </section>
+      <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+      <div
+          className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
+          style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
+        >{postPreviews}
+      </div>
+      </div>
     </>
   );
 }
@@ -141,7 +156,7 @@ const features = [
     demo: (
       <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter blur-sm hover:filter-none">
       <a href="YiShengTay_Resume.pdf">
-      <Image className="rounded-lg" src="/YiShengTay_Resume.jpg" alt="image of resume" height={240} width={160} />
+      <Image className="rounded-lg" src="/YiShengTay_Resume.jpg" alt="image of resume" height={160} width={160} />
       </a>
       {/* <figcaption className="absolute px-4 text-lg text-black bottom-6 bg-white min-w-full">
         <p>Resume</p>
