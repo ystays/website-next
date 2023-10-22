@@ -24,14 +24,10 @@ const PostPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
   return (
-    <div>
-        <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-        <section>
-        <h1 className="text-2xl">{post.data.title}</h1>
-        <p className="mt-2">{post.data.date}</p>
-        <Markdown>{post.content}</Markdown>
-      </section>
-      </div>
+    <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+      <h1 className="text-2xl">{post.data.title}</h1>
+      <p className="mt-2">{post.data.date}</p>
+      <Markdown>{post.content}</Markdown>
     </div>
   );
 };
