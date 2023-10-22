@@ -1,6 +1,5 @@
 import Card from "@/components/home/card"
-import ComponentGrid from "@/components/home/component-grid"
-import WebVitals from "@/components/home/web-vitals"
+// import ComponentGrid from "@/components/home/component-grid"
 // import Image from "next/image"
 import Image from "@/components/home/image-card"
 
@@ -41,7 +40,7 @@ const features = [{
   demo: (
     <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
       <a href="https://storymaps.arcgis.com/stories/f552e19611a549d1b0a145a5a5120a4a">
-      <img className="rounded-lg" src="/Immigration_Nationalities_Inequality_Cover.jpg" alt="image of Immigration, Nationalities & Inequality StoryMap cover" height={250} width={250} />
+      <Image src="/Immigration_Nationalities_Inequality_Cover.jpg" alt="image of Immigration, Nationalities & Inequality StoryMap cover"/>
       </a>
     </figure>
   ),

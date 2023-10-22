@@ -18,25 +18,25 @@ export default async function Gallery() {
       <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
         <div className="grid-cols-1 grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/gallery/the_creative_act-artist.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/the_creative_act-artist.jpg" alt=""/>
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/gallery/no-mind.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/no-mind.jpg" alt=""/>
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/gallery/quantum-model.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/quantum-model.jpg" alt=""/>
           </div>
         </div>
 
         <div className="grid-cols-1 grid gap-4">
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/gallery/inevitability.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/inevitability.jpg" alt=""/>
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/gallery/naturalness.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/naturalness.jpg" alt=""/>
           </div>
           <div>
-            <img className="h-auto max-w-full rounded-lg" src="/gallery/misuse.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/misuse.jpg" alt=""/>
           </div>
         </div>
       </div>
