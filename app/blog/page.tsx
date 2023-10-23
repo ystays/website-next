@@ -4,14 +4,32 @@ import WebVitals from "@/components/home/web-vitals"
 // import Image from "next/image"
 import Image from "@/components/home/image-card"
 
+import getPostMetadata from "../../components/posts/getPostMetadata";
+import PostPreview from "../../components/posts/PostPreview";
+
 export default async function Blog() {
+    const postMetadata = getPostMetadata();
+    const postPreviews = postMetadata.map((post) => (
+      <PostPreview key={post.slug} {...post} />
+    ));
+
+
     return(
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-
-      <section>
-        <h2>In progress...</h2>
-      </section>
-
+        <h1
+            className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
+            style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
+        >
+          Blog
+        </h1>
+        <br/>
+        <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+          <div
+              className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
+              style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
+            >{postPreviews}
+          </div>
+        </div>
       </div>
     )
 }
