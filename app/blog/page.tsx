@@ -29,8 +29,7 @@ export default async function Blog() {
               className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
               style={{ animationDelay: "0.3s", animationFillMode: "forwards" }} 
               >*/}
-      <div className="my-10 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 lg:grid-cols-2 xl:px-0">
-
+      <div className="my-10 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 lg:grid-cols-2 xl:px-0 place-items-center">
             {postPreviews}
           </div>
         </div>

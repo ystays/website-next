@@ -1,6 +1,6 @@
 ---
-title: "The Details of the Game"
-subtitle: ""
+title: "The Details of the Beautiful Game"
+subtitle: "(football)"
 date: "2023-10-24"
 ---
 
@@ -28,4 +28,4 @@ What I look at when I'm evaluating footballers based on the eye test:
     - take your touch away from a defender and into space
 
 5. Biomechanics. 
-    = Do they move efficiently? Aesthetically-pleasing dribblers glide across the field (Messi plays very lightly on the ball of his feet)
+    - do they move efficiently? Aesthetically-pleasing dribblers glide across the field (Messi plays very lightly on the ball of his feet)

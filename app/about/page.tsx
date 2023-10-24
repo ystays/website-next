@@ -12,7 +12,7 @@ export default async function About() {
           <Image alt="profile photo" src="/profile.jpg"></Image>
         </div>
       <section>
-        <p>Hi.
+        <p>Hi. <br/>My name is Yi Sheng Tay.<br/><br/>
           I&apos;m a 2023 Computer Science graduate from UCLA ...</p>
         <small>
           with an interest in backend development, AI and digital humanities. Previously interned at Intel and Keysight, and has lately been exploring building web apps with the MERN stack. 
