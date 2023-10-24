@@ -19,7 +19,11 @@ const getPostMetadata = (): PostMetadata[] => {
     };
   });
 
-  return posts;
+  return posts.sort((post1, post2) => {if (post1.date < post2.date) {
+    return 1;
+  } else {
+    return -1;
+  };});
 };
 
 export default getPostMetadata;

@@ -7,7 +7,6 @@ import path from "path";
 // import html from "remark-html";
 
 const getPostContent = async (slug: string) => {
-  
   const folder = path.join(process.cwd(), 'posts/')
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
@@ -30,7 +29,7 @@ const PostPage = async (props: any) => {
     <div className="z-10 w-full max-w-xl px-5 xl:px-0">
       <h1 className="text-2xl">{post.data.title}</h1>
       <p className="mt-2">{post.data.date}</p>
-      <Markdown>{post.content}</Markdown>
+      <Markdown className="prose">{post.content}</Markdown>
     </div>
   );
 };

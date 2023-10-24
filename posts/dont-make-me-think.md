@@ -4,7 +4,9 @@ subtitle: ""
 date: "2023-10-21"
 ---
 
-__Scraps__      
+
+<br/>
+### <u>Takeaways</u>  
 Don't: Let a user spend time thinking - is that an ad or part of the site?
       
 <br/>
@@ -12,16 +14,12 @@ Don't: Let a user spend time thinking - is that an ad or part of the site?
 1. We don't read pages. We scan them. Web users tend to act like sharks: They have to keep moving, or they'll die.
 2. We don't make optimal choices. We satisfice.
 3. We don't figure out how things work. We muddle through.
-  
-  
-    
+
 <br/>
 Jakob Nielsen - Users:
 1. Search-dominant
 2. Link-dominant
-  
-  
-  
+
 <br/>
 Things that diminish goodwill:
 Punishing me for not doing things your way.
