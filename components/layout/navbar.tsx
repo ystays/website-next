@@ -55,12 +55,12 @@ export default function NavBar({ session }: { session: Session | null }) {
                 <div
                   onMouseLeave={() => setOpenPopover(!openPopover)} 
                   className="w-full rounded-md bg-white">
-                  <Link href="projects">
+                  <Link href="/projects">
                   <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
                     <p>Projects</p>
                   </button>
                   </Link>
-                  <Link href="gallery">
+                  <Link href="/gallery">
                   <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
                     <p>Gallery of Words</p>
                   </button>

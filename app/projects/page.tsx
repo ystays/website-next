@@ -14,7 +14,7 @@ export default async function Projects() {
           Projects
         </h1>
         <section>
-        <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+        <div className="my-10 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo, large, tall, fullWidth }) => (
           <Card
             key={title}
@@ -53,6 +53,14 @@ const features = [{
   description: "Written in Node.js",
   demo: <iframe src="https://ystays-weather-website.herokuapp.com/" width="95%" height="100%" allowFullScreen allow="geolocation"></iframe>,
   large: undefined,
+  tall: true,
+  fullWidth: undefined,
+},
+{
+  title: "LLM Slackbot",
+  description: "Python, BeautifulSoup, Flask, LangChain, Pinecone, GPT-3.5",
+  demo: <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"><a href="https://www.github.com/ystays/llm-slackbot"><img src="/projects/llm-slackbot.jpg" alt="" className="rounded-lg" height={800} width={600}/></a></figure>,
+  large: true,
   tall: true,
   fullWidth: undefined,
 },

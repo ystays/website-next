@@ -15,28 +15,28 @@ export default async function Gallery() {
       </h1>
       <br/>
       <section>
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-4 place-items-center justify-center">
         <div className="grid-cols-1 grid gap-4">
           <div>
-            <Image className="h-auto max-w-full rounded-lg" src="/gallery/the_creative_act-artist.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/the_creative_act-artist.jpg" alt="" width={250} height={100}/>
           </div>
           <div>
-            <Image className="h-auto max-w-full rounded-lg" src="/gallery/no-mind.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/no-mind.jpg" alt="" width={250} height={100}/>
           </div>
           <div>
-            <Image className="h-auto max-w-full rounded-lg" src="/gallery/quantum-model.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/quantum-model.jpg" alt="" width={250} height={100}/>
           </div>
         </div>
 
         <div className="grid-cols-1 grid gap-4">
           <div>
-            <Image className="h-auto max-w-full rounded-lg" src="/gallery/inevitability.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/inevitability.jpg" alt="" width={250} height={100}/>
           </div>
           <div>
-            <Image className="h-auto max-w-full rounded-lg" src="/gallery/naturalness.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/naturalness.jpg" alt="" width={250} height={100}/>
           </div>
           <div>
-            <Image className="h-auto max-w-full rounded-lg" src="/gallery/misuse.jpg" alt=""/>
+            <Image className="h-auto max-w-full rounded-lg" src="/gallery/misuse.jpg" alt="" width={250} height={100}/>
           </div>
         </div>
       </div>
