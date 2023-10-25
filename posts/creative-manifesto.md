@@ -2,7 +2,9 @@
 title: "My Creative Manifesto"
 subtitle: ""
 date: "2023-10-24"
+author: "Yi Sheng Tay"
 ---
+
 <br/>
 <u>Part 1: Inside</u>
 1. Do one thing at a time
@@ -21,6 +23,7 @@ date: "2023-10-24"
 
 ***
 
+<u>Remarks</u>
 We want to do one thing at a time; to catch one bird with one stone.
 
-We're not afraid of abandoning a work in progress, but we strive to abandon it at the right time.
+We're not afraid of abandoning unfinished work, but we strive to abandon it at the right time.

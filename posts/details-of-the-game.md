@@ -1,31 +1,32 @@
 ---
 title: "The Details of the Beautiful Game"
-subtitle: "(football)"
+subtitle: "\"Football is a simple game for smart people\"    -Dimitar Berbatov"
 date: "2023-10-24"
+author: "Yi Sheng Tay"
 ---
 
+<br/>
 What I look at when I'm evaluating footballers based on the eye test:
 
-1. Body shape when receiving the ball/taking a first touch 
+1. Optimal body shape when receiving the ball/taking a first touch 
     - receiving with the front foot/back foot, depending on where their opponent is
-    - open up your body to the rest of the field, 
-    - receive on the half-turn, 
-    - take a touch to prevent your passing options being confined to one side of the field (e.g. Van Dijk) 
+    - opening up their body to the rest of the field (e.g. taking a touch to prevent their passing options being confined to one side of the field), 
+    - receiving on the half-turn
+    - taking their touch away from a defender and into space
 
 2. Unpredictability 
     - disguised passing/shots with body shape
-    - minimising backlift to reduce time for opponents to react (e.g. toe poke shots in futsal)
+    - minimising backlift to reduce time for opponents to react (e.g. the toe poke in futsal)
 
 3. Positioning and awareness 
     - making runs; overlapping/underlapping runs 
     - dropping into space to receive the ball
-    - moving into the half-spaces from the wings, 
-    - dribbling without looking at the ball (with your head up)
-    - when to dribble/drive forward (when there's space) and when to pass
+    - moving into the half-spaces from the wings or staying wide to maintain width
+    - dribbling without looking at the ball (with their head up)
+    - knowing when to dribble/drive forward (when there's space) and when to pass
 
 4. Using their body to shield the ball from opponents
-    - the best dribblers know how to place their body in between the ball and the defender
-    - take your touch away from a defender and into space
+    - the best dribblers know how to place their body in between the ball and the defender, which is incredibly effective at compensating for disadvantages in size/height
 
-5. Biomechanics. 
-    - do they move efficiently? Aesthetically-pleasing dribblers glide across the field (Messi plays very lightly on the ball of his feet)
+5. Biomechanics
+    - do they move efficiently? Aesthetically-pleasing dribblers glide across the field (e.g. Messi plays very lightly on the ball of his feet)
