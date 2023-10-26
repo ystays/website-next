@@ -4,7 +4,7 @@ import cx from "classnames";
 import { sfPro, inter } from "./fonts";
 import Nav from "@/components/layout/nav";
 import Footer from "@/components/layout/footer";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 
 import { Theme } from "@radix-ui/themes";
 
@@ -42,10 +42,11 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
       <body className={cx(sfPro.variable, inter.variable)}>
-        <div className="fixed h-screen w-full bg-gradient-to-br from-emerald-50 via-white to-indigo-100" />
+        <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-100 via-white to-amber-50" />
         <Suspense fallback="...">
           <Nav />
         </Suspense>

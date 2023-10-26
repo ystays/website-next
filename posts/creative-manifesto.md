@@ -26,4 +26,4 @@ author: "Yi Sheng Tay"
 <u>Remarks</u>
 We want to do one thing at a time; to catch one bird with one stone.
 
-We're not afraid of abandoning unfinished work, but we strive to abandon it at the right time.
+We're not afraid of abandoning unfinished work, but we try to abandon it at the right time.

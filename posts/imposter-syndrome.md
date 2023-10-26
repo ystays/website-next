@@ -10,6 +10,12 @@ If you don't feel like an imposter, you've probably stopped moving forward.
 
 ***
 
+> We say, “A good father is not a good father.” Do you understand? One who thinks he is a good father is not a good father; one who thinks he is a good husband is not a good husband. One who thinks he is one of the worst husbands may be a good one if he is always trying to be a good husband with a single-hearted effort.
+
+- Shunryū Suzuki
+
+***
+
 > *Complacency is a classic mistake. Some people get to a certain point and go, “Okay, I’ve figured it out!” Writing isn’t a thing you figure out — ever. My favorite things I’ve ever written, I hate. That might sound like a weird thing to say. But anything I’ve ever written that I felt was really great, I inevitably will look at it two years later and think, “Oh God, this is so amateurish and terrible.” But that’s a good thing. If you ever feel like you’ve solved anything in writing, you’re just setting yourself up for a huge fall — and you’re wrong. Because it’s not math or science; it’s a weird, nebulous, hard-to-define thing.*
 > 
 > *One person’s favorite show in history is another person’s least favorite show in history—or worse, it’s a show they’re indifferent to. And to stay vibrant and successful, you can’t ever feel like you know what you’re doing. Your attitude has to constantly be, “Who is this rank amateur, and how can I teach him how to write?”*

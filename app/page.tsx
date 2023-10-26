@@ -42,24 +42,13 @@ export default function Home() {
   return (
     <>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0 h-[calc(100vh-170px)] grid items-center">
-        {/* <a
-          href="https://github.com/ystays"
-          target="_blank"
-          rel="noreferrer"
-          className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
-        >
-          <Github className="h-5 w-5 text-[#1d9bf0]" />
-          <p className="text-sm font-semibold text-[#1d9bf0]">
-            My Github
-          </p>
-        </a> */}
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           Hello.
         </h1>
-        <h2 className="text-3xl">Join me on a journey where getting lost is the only true destination.</h2>
+        <h2 className="text-3xl text-center">Join me on a journey where getting lost is the only true destination.</h2>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}

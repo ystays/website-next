@@ -59,8 +59,23 @@ const features = [{
 {
   title: "LLM Slackbot",
   description: "Python, BeautifulSoup, Flask, LangChain, Pinecone, GPT-3.5",
-  demo: <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"><a href="https://www.github.com/ystays/llm-slackbot"><img src="/projects/llm-slackbot.jpg" alt="" className="rounded-lg" height={800} width={600}/></a></figure>,
+  demo: <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"><a href="https://www.github.com/ystays/llm-slackbot"><img src="/projects/llm-slackbot.jpg" alt="image of sample conversation with the LLM Slackbot" className="rounded-lg" height={800} width={600}/></a></figure>,
   large: true,
+  tall: true,
+  fullWidth: undefined,
+},
+{
+  title: "React Chat App",
+  description: "Built with React.js",
+  demo: (
+    <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+      <a href="https://github.com/ystays/rita-chat-react">
+      <img className="rounded-lg" src="/projects/rita-chat-login.png" alt="image of login page in React Chat App" height={250} width={290} />
+      <img className="rounded-lg" src="/projects/rita-chat-chats.png" alt="image of chats page in React Chat App" height={250} width={290} />
+      </a>
+    </figure>
+  ),
+  large: undefined,
   tall: true,
   fullWidth: undefined,
 },
@@ -68,8 +83,8 @@ const features = [{
   title: "this.website",
   description: "Built with Next.js",
   demo: <iframe src="https://ystays.com/" width="95%" height="100%" allowFullScreen></iframe>,
-  large: true,
+  large: undefined,
   tall: true,
-  fullWidth: undefined,
+  fullWidth: true,
 },
 ]
