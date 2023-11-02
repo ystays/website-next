@@ -197,7 +197,7 @@ const features = [
       <a href="/playground" className="transition duration-300 hover:text-blue-500">
         <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
           <p>
-            "Don't be a fool! Close this page at once! It is nothing but <i>foma*</i>!"
+            &quot;Don&apos;t be a fool! Close this page at once! It is nothing but <i>foma*</i>!&quot;
             <br/>
             <br/>
             <br/>
