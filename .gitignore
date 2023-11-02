@@ -39,3 +39,5 @@ next-env.d.ts
 # misc
 .vscode
 /drafts
+/posts/drafts
+/posts/draft.md

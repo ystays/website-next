@@ -9,22 +9,22 @@ import { nFormatter } from "@/lib/utils";
 import { Flex, Button } from "@radix-ui/themes";
 import Link from "next/link";
 
-export default function Home() {
-  // const { stargazers_count: stars } = await fetch(
-  //   "https://api.github.com/repos/steven-tey/precedent",
-  //   {
-  //     ...(process.env.GITHUB_OAUTH_TOKEN && {
-  //       headers: {
-  //         Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-  //         "Content-Type": "application/json",
-  //       },
-  //     }),
-  //     // data will revalidate every 24 hours
-  //     next: { revalidate: 86400 },
-  //   },
-  // )
-  //   .then((res) => res.json())
-  //   .catch((e) => console.log(e));
+export default async function Home() {
+  const { stargazers_count: stars } = await fetch(
+    "https://api.github.com/repos/steven-tey/precedent",
+    {
+      ...(process.env.GITHUB_OAUTH_TOKEN && {
+        headers: {
+          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+      }),
+      // data will revalidate every 24 hours
+      next: { revalidate: 86400 },
+    },
+  )
+    .then((res) => res.json())
+    .catch((e) => console.log(e));
 
   // let randPage = "";
 
@@ -189,4 +189,23 @@ const features = [
   //   ),
   //   large: true,
   // },
+  {
+    title: "Lies!",
+    description:
+      "Playground",
+    demo: (
+      <a href="/playground" className="transition duration-300 hover:text-blue-500">
+        <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
+          <p>
+            "Don't be a fool! Close this page at once! It is nothing but <i>foma*</i>!"
+            <br/>
+            <br/>
+            <br/>
+            <small>*harmless untruths</small>
+          </p>
+        </div>
+      </a>
+    ),
+    fullWidth: true,
+  },
 ];
