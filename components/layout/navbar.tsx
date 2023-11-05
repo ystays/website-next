@@ -65,6 +65,11 @@ export default function NavBar({ session }: { session: Session | null }) {
                     <p>Gallery of Words</p>
                   </button>
                   </Link>
+                  <Link href="/playground">
+                  <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
+                    <p>Playground</p>
+                  </button>
+                  </Link>
                 </div>
               }
               openPopover={openPopover}

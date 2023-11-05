@@ -26,7 +26,7 @@ export default function Card({
     >
       <div className={`flex items-center justify-center ${tall ? "h-[25rem]" : "h-60"}`}>{demo}</div>
       <div className="mx-auto max-w-md text-center">
-        <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent [text-wrap:balance] md:text-3xl md:font-normal">
+        <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold [text-wrap:balance] md:text-3xl md:font-normal">
           {title}
         </h2>
         <div className="prose-sm mt-3 leading-normal text-gray-500 [text-wrap:balance] md:prose min-w-min">

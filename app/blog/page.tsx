@@ -1,3 +1,5 @@
+// "use client";
+
 import Card from "@/components/home/card"
 import ComponentGrid from "@/components/home/component-grid"
 import WebVitals from "@/components/home/web-vitals"
@@ -6,13 +8,13 @@ import Image from "@/components/home/image-card"
 
 import getPostMetadata from "../../components/posts/getPostMetadata";
 import PostPreview from "../../components/posts/PostPreview";
+import FilterPopover from "@/components/blog/filter-popover";
 
 export default async function Blog() {
     const postMetadata = getPostMetadata();
     const postPreviews = postMetadata.map((post) => (
       <PostPreview key={post.slug} {...post} />
     ));
-
 
     return(
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
@@ -23,6 +25,7 @@ export default async function Blog() {
           Blog
         </h1>
         <br/>
+        {/* <div className="flex justify-end"><FilterPopover></FilterPopover></div> */}
         <div>
         {/* <div className="z-10 w-full max-w-xl px-5 xl:px-0 sm:max-w-fit"> */}
           {/* <div

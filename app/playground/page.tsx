@@ -99,7 +99,7 @@ const features = [{
       "",
     demo: (
       <a href="/posts/simplify-your-game" className="transition duration-300 hover:text-blue-500">
-      <div className="flex items-center justify-center text-center font-mono font-semibold m-4 text-s">
+      <div className="flex items-center justify-center text-center font-mono font-semibold m-4 text-sm">
         <p>
         The machinery of spectacle grinds up everything in its path, nothing lasts very long, and the manager is as disposable as any other product of consumer society. Today the crowd screams &apos;Never die!&apos; and next Sunday they invite him to kill himself.<br/>
         {/* The manager believes football is a science and the field a laboratory, but the genius of Einstein and the subtlety of Freud isn't enough for the owners and the fans. They want a miracle-worker like the Virgin of Lourdes, with the stamina of Gandhi.<br/> */}
