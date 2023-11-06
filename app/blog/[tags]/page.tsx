@@ -23,7 +23,7 @@ export default async function Blog({ params }: { params: { tags: string } }) {
           Blog
         </h1>
         <br/>
-        <div className="flex justify-end"><FilterPopover></FilterPopover></div>
+        <div className="flex justify-end"><FilterPopover currentTag={ params.tags }></FilterPopover></div>
         <div>
         {/* <div className="z-10 w-full max-w-xl px-5 xl:px-0 sm:max-w-fit"> */}
           {/* <div

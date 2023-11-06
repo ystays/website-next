@@ -25,7 +25,7 @@ export default async function Blog() {
           Blog
         </h1>
         <br/>
-        <div className="flex justify-end"><FilterPopover></FilterPopover></div>
+        <div className="flex justify-end"><FilterPopover currentTag={ "Tag" }></FilterPopover></div>
         <div>
         {/* <div className="z-10 w-full max-w-xl px-5 xl:px-0 sm:max-w-fit"> */}
           {/* <div
