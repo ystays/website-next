@@ -1,18 +1,16 @@
-// "use client";
-
 import Card from "@/components/home/card"
 import ComponentGrid from "@/components/home/component-grid"
 import WebVitals from "@/components/home/web-vitals"
 // import Image from "next/image"
 import Image from "@/components/home/image-card"
 
-import getPostMetadata from "../../components/posts/getPostMetadata";
-import PostPreview from "../../components/posts/PostPreview";
+import getPostMetadata from "../../../components/posts/getPostMetadata";
+import PostPreview from "../../../components/posts/PostPreview";
 import FilterPopover from "@/components/blog/filter-popover";
 
-export default async function Blog() {
+export default async function Blog({ params }: { params: { tags: string } }) {
     const postMetadata = getPostMetadata();
-    const postPreviews = postMetadata.map((post) => (
+    const postPreviews = postMetadata.filter((post) => {return post.tags === params.tags}).map((post) => (
       <PostPreview key={post.slug} {...post} />
     ));
 

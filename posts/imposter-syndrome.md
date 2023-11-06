@@ -3,6 +3,7 @@ title: "Imposter Syndrome"
 subtitle: "Don't worry, we're all imposters here."
 date: "2023-10-23"
 author: "Yi Sheng Tay"
+tags: "other"
 ---
 
 <br/>

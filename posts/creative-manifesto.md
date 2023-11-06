@@ -3,6 +3,7 @@ title: "My Creative Manifesto"
 subtitle: ""
 date: "2023-10-24"
 author: "Yi Sheng Tay"
+tags: "creativity"
 ---
 
 <br/>

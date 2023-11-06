@@ -3,7 +3,7 @@ title: "On Simplifying Your Game"
 subtitle: "(football/soccer)"
 date: "2023-10-21"
 author: "Yi Sheng Tay"
-
+tags: "football"
 ---
 
 > I think of beauty as an absolute necessity. I don’t think it’s a privilege or an indulgence, it’s not even a quest. I think it’s almost like knowledge, which is to say, it’s what we were born for.    

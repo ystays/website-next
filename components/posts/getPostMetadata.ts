@@ -17,7 +17,9 @@ const getPostMetadata = (): PostMetadata[] => {
       subtitle: matterResult.data.subtitle,
       author: matterResult.data.author,
       slug: fileName.replace(".md", ""),
+      tags: matterResult.data.tags,
     };
+
   });
 
   return posts.sort((post1, post2) => {if (post1.date < post2.date) {

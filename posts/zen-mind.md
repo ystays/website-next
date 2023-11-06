@@ -3,6 +3,7 @@ title: "Excerpts from Zen Mind, Beginner's Mind by Shunryū Suzuki"
 subtitle: "\"There is no need to remember what I say; there is no need to understand what I say.\""
 date: "2023-10-25"
 author: "Yi Sheng Tay"
+tags: "creativity"
 ---
 
 <br/>

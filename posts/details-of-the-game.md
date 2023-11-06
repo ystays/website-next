@@ -3,6 +3,7 @@ title: "The Details of the Beautiful Game"
 subtitle: "\"Football is a simple game for smart people\"    -Dimitar Berbatov"
 date: "2023-10-24"
 author: "Yi Sheng Tay"
+tags: "football"
 ---
 
 <br/>
