@@ -28,3 +28,5 @@ tags: "creativity"
 We want to do one thing at a time; to catch one bird with one stone.
 
 When necessary, abandon unfinished work, but at the right time. (The work is done when you feel it is.)
+
+There is no need to believe or understand anything we say about ourselves or about our art. The truth will imprison us with its expectations.
