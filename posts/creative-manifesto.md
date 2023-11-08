@@ -27,4 +27,4 @@ tags: "creativity"
 <u>Remarks</u>
 We want to do one thing at a time; to catch one bird with one stone.
 
-When necessary, abandon unfinished work, but at the right time.
+When necessary, abandon unfinished work, but at the right time. (The work is done when you feel it is.)
