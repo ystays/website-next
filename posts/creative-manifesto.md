@@ -7,6 +7,8 @@ tags: "creativity"
 ---
 
 <br/>
+Nothing in this manifesto is true.
+<br/>
 <u>Part 1: Inside</u>
 1. Do one thing at a time
 2. Don't overthink it
