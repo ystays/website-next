@@ -1,5 +1,12 @@
 ## Introduction
 
+This is my personal website. It includes a page to display some of my projects, a blog, an about page, and a playground for experimental features and designs.
+
+## TODOs
+
+1. Add search bar
+2. Add persistent navigation
+
 ## Tech Stack + Features
 
 ### Frameworks
@@ -43,4 +50,4 @@
 - [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
 
 ## Credits
-This project used Precedent, created by Steven Tey ([@steventey](https://twitter.com/steventey))
+This project uses Precedent, created by Steven Tey ([@steventey](https://twitter.com/steventey))
