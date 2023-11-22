@@ -129,9 +129,9 @@ const features = [
       "One page. That's it.",
     demo: (
       <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter blur-sm hover:filter-none">
-      <a href="YiShengTay_Resume.pdf">
+      <Link href="YiShengTay_Resume.pdf">
       <Image className="rounded-lg" src="/YiShengTay_Resume.jpg" alt="image of resume" height={160} width={160} />
-      </a>
+      </Link>
       {/* <figcaption className="absolute px-4 text-lg text-black bottom-6 bg-white min-w-full">
         <p>Resume</p>
       </figcaption> */}
@@ -149,11 +149,11 @@ const features = [
       "Blog",
     demo: (
       <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
-        <a href="/blog" className="transition duration-300 hover:text-blue-500">
+        <Link href="/blog" className="transition duration-300 hover:text-blue-500">
         <p>
           When my talk is over, your listening is over. <br/>There is no need to remember what I say; there is no need to understand what I say. <br/>You understand; you have full understanding within yourself. <br/>There is no problem. <br/> - Shunryū Suzuki
         </p>
-        </a>
+        </Link>
       </div>
     ),
     fullWidth: true,
@@ -194,7 +194,7 @@ const features = [
     description:
       "Playground",
     demo: (
-      <a href="/playground" className="transition duration-300 hover:text-blue-500">
+      <Link href="/playground" className="transition duration-300 hover:text-blue-500">
         <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
           <p>
             &quot;Don&apos;t be a fool! Close this page at once! It is nothing but <i>foma*</i>!&quot;
@@ -204,7 +204,7 @@ const features = [
             <small>*harmless untruths</small>
           </p>
         </div>
-      </a>
+      </Link>
     ),
     fullWidth: true,
   },

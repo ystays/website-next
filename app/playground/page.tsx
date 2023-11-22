@@ -1,4 +1,5 @@
 import Card from "@/components/home/card"
+import Link from "next/link";
 // import ComponentGrid from "@/components/home/component-grid"
 
 export default async function Projects() {
@@ -34,13 +35,13 @@ const features = [{
     description:
       "A great tailor cuts little.",
     demo: (
-        <a href="" className="transition duration-300 hover:text-blue-500">
+        <Link href="" className="transition duration-300 hover:text-blue-500">
       <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
         <p>
           Ever desireless, one can see the mystery.
         </p>
       </div>
-        </a>
+        </Link>
     ),
   },
   {
@@ -48,14 +49,14 @@ const features = [{
     description:
       "or (Birdman)",
     demo: (
-        <a href="" className="transition duration-300 hover:text-blue-500">
+        <Link href="" className="transition duration-300 hover:text-blue-500">
       <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
         <p>
         You mistake all those little noises in your head for true knowledge!<br/>
         -Riggan Thomson
         </p>
       </div>
-        </a>
+        </Link>
     ),
     large: undefined,
     tall: undefined,
@@ -66,13 +67,13 @@ const features = [{
     description:
       "Do one thing at a time",
     demo: (
-        <a href="" className="transition duration-300 hover:text-blue-500">
+        <Link href="" className="transition duration-300 hover:text-blue-500">
       <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
         <p>
           What we want is to catch one bird with one stone.
         </p>
       </div>
-        </a>
+        </Link>
     ),
   },
   {
@@ -80,7 +81,7 @@ const features = [{
     description:
       "If you're afraid of what you need ...",
     demo: (
-      <a href="/" className="transition duration-300 hover:text-blue-500">
+      <Link href="/" className="transition duration-300 hover:text-blue-500">
       <div className="flex items-center justify-center text-center font-mono font-semibold m-4 text-xs">
         <p>
           We shall not cease from exploration<br/>
@@ -90,7 +91,7 @@ const features = [{
           -T.S. Eliot
         </p>
       </div>
-      </a>
+      </Link>
     ),
   },
   {
@@ -98,7 +99,7 @@ const features = [{
     description:
       "",
     demo: (
-      <a href="/posts/simplify-your-game" className="transition duration-300 hover:text-blue-500">
+      <Link href="/posts/simplify-your-game" className="transition duration-300 hover:text-blue-500">
       <div className="flex items-center justify-center text-center font-mono font-semibold m-4 text-sm">
         <p>
         The machinery of spectacle grinds up everything in its path, nothing lasts very long, and the manager is as disposable as any other product of consumer society. Today the crowd screams &apos;Never die!&apos; and next Sunday they invite him to kill himself.<br/>
@@ -106,10 +107,8 @@ const features = [{
         -Galeano
         </p>
       </div>
-      </a>
+      </Link>
     ),
     large: true,
   },
-
-
 ]
