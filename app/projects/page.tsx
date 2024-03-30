@@ -1,7 +1,7 @@
 import Card from "@/components/home/card"
 // import ComponentGrid from "@/components/home/component-grid"
-// import Image from "next/image"
-import Image from "@/components/home/image-card"
+import Image from "next/image"
+// import Image from "@/components/home/image-card"
 
 export default async function Projects() {
     return(
@@ -40,7 +40,7 @@ const features = [{
   demo: (
     <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
       <a href="https://storymaps.arcgis.com/stories/f552e19611a549d1b0a145a5a5120a4a">
-      <img className="rounded-lg" src="/Immigration_Nationalities_Inequality_Cover.jpg" alt="image of Immigration, Nationalities & Inequality StoryMap cover" height={250} width={250} />
+      <Image className="rounded-lg" src="/Immigration_Nationalities_Inequality_Cover.jpg" alt="image of Immigration, Nationalities & Inequality StoryMap cover" height={250} width={250} />
       </a>
     </figure>
   ),
@@ -59,7 +59,7 @@ const features = [{
 {
   title: "LLM Slackbot",
   description: "Python, BeautifulSoup, Flask, LangChain, Pinecone, GPT-3.5",
-  demo: <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"><a href="https://www.github.com/ystays/llm-slackbot"><img src="/projects/llm-slackbot.jpg" alt="image of sample conversation with the LLM Slackbot" className="rounded-lg" height={800} width={600}/></a></figure>,
+  demo: <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"><a href="https://www.github.com/ystays/llm-slackbot"><Image src="/projects/llm-slackbot.jpg" alt="image of sample conversation with the LLM Slackbot" className="rounded-lg" height={800} width={600}/></a></figure>,
   large: true,
   tall: true,
   fullWidth: undefined,
@@ -70,8 +70,8 @@ const features = [{
   demo: (
     <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
       <a href="https://github.com/ystays/rita-chat-react">
-      <img className="rounded-lg" src="/projects/rita-chat-login.png" alt="image of login page in React Chat App" height={250} width={290} />
-      <img className="rounded-lg" src="/projects/rita-chat-chats.png" alt="image of chats page in React Chat App" height={250} width={290} />
+      <Image className="rounded-lg" src="/projects/rita-chat-login.png" alt="image of login page in React Chat App" height={250} width={290} />
+      <Image className="rounded-lg" src="/projects/rita-chat-chats.png" alt="image of chats page in React Chat App" height={250} width={290} />
       </a>
     </figure>
   ),
