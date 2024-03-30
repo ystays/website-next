@@ -34,7 +34,6 @@ export const metadata = {
     type: "website",
   },
   metadataBase: new URL("https://ystays.com"),
-  themeColor: "#FFF",
 };
 
 export default async function RootLayout({
