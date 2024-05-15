@@ -67,7 +67,7 @@ const features = [{
     description:
       "Do one thing at a time",
     demo: (
-        <Link href="" className="transition duration-300 hover:text-blue-500">
+        <Link href="/posts/creative-manifesto" className="transition duration-300 hover:text-blue-500">
       <div className="flex items-center justify-center text-center font-mono font-semibold m-4">
         <p>
           What we want is to catch one bird with one stone.

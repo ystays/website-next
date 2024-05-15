@@ -7,7 +7,7 @@ tags: "creativity"
 ---
 
 <br/>
-Nothing in this manifesto is true .
+Nothing in this manifesto is true (The name that can be named is not the eternal name).
 <br/>
 <br/>
 <u>Part 1: Inside</u>
@@ -17,14 +17,16 @@ Nothing in this manifesto is true .
 3. Write first, edit later
 
 <u>Part 2: Nothing</u>
+
 1. Nothing is original
 2. Repetition is a form of change
 3. Experience, not philosophy
 
 <u>Part 3: Outside</u>
+
 1. It is not possible to make a mistake
 2. Don't be afraid of fun
-3. Success teaches us nothing
+3. We learn nothing from success
 
 ***
 

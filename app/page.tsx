@@ -26,18 +26,6 @@ export default async function Home() {
   //   .then((res) => res.json())
   //   .catch((e) => console.log(e));
 
-  // let randPage = "";
-
-  // function randomPage() {
-  //   var myPages = [
-  //     'about',
-  //     'blog',
-  //     'portfolio'
-  //   ];
-    
-  //   randPage = myPages[Math.floor(Math.random()*myPages.length)];
-  //   window.location.replace(randPage);
-  // }
 
   return (
     <>
