@@ -12,7 +12,7 @@ Nothing in this manifesto is true (The name that can be named is not the eternal
 <br/>
 <u>Part 1: Inside</u>
 
-1. Do one thing at a time
+1. Do one thing at a time (Limit your activity)
 2. Don't overthink it
 3. Write first, edit later
 
