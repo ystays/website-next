@@ -1,16 +1,17 @@
 import Card from "@/components/home/card"
 import ComponentGrid from "@/components/home/component-grid"
 import WebVitals from "@/components/home/web-vitals"
-// import Image from "next/image"
 import Image from "@/components/home/image-card"
 
 import getPostMetadata from "../../../components/posts/getPostMetadata";
 import PostPreview from "../../../components/posts/PostPreview";
 import FilterPopover from "@/components/blog/filter-popover";
+import { use } from 'react';
 
-export default async function Blog({ params }: { params: { tags: string } }) {
+export default async function Blog({ params }: { params: Promise<{ tags: string }> }) {
+    const { tags } = use(params);
     const postMetadata = getPostMetadata();
-    const postPreviews = postMetadata.filter((post) => {return post.tags === params.tags}).map((post) => (
+    const postPreviews = postMetadata.filter((post) => {return post.tags === tags}).map((post) => (
       <PostPreview key={post.slug} {...post} />
     ));
 
@@ -23,7 +24,7 @@ export default async function Blog({ params }: { params: { tags: string } }) {
           Blog
         </h1>
         <br/>
-        <div className="flex justify-end"><FilterPopover currentTag={ params.tags }></FilterPopover></div>
+        <div className="flex justify-end"><FilterPopover currentTag={ tags }></FilterPopover></div>
         <div>
         {/* <div className="z-10 w-full max-w-xl px-5 xl:px-0 sm:max-w-fit"> */}
           {/* <div
