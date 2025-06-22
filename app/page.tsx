@@ -120,15 +120,7 @@ const features = [
       <Link href="YiShengTay_Resume.pdf">
       <Image className="rounded-lg" src="/YiShengTay_Resume.jpg" alt="image of resume" height={160} width={160} />
       </Link>
-      {/* <figcaption className="absolute px-4 text-lg text-black bottom-6 bg-white min-w-full">
-        <p>Resume</p>
-      </figcaption> */}
-        {/* <Flex align="center" gap="3">
-          <Button variant="solid" className="border-black border-2 rounded-2xl py-2 px-4 ">Click here</Button>
-        </Flex>
-      </a> */}
     </figure>
-
     ),
   },
   {
