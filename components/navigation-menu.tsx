@@ -14,7 +14,7 @@ const NavigationMenu = (props: NavigationMenuProps) => {
               "px-3 py-2 text-sm rounded-md hover:bg-gray-100 dark:hover:bg-gray-900",
               "text-sm font-medium",
               "text-gray-700 dark:text-gray-100",
-              "focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+              "focus:outline-hidden focus-visible:ring-3 focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
             )}
           >
             More
@@ -29,7 +29,7 @@ const NavigationMenu = (props: NavigationMenuProps) => {
               "radix-motion-to-end:animate-exit-to-right"
             )}
           >
-            <div className="w-[21rem] lg:w-[23rem] p-3">
+            <div className="w-84 lg:w-92 p-3">
               <div className="grid grid-cols-6 gap-4">
                 <div className="col-span-2 w-full bg-gray-100 dark:bg-gray-900 p-4 rounded-md"></div>
 
@@ -49,7 +49,7 @@ const NavigationMenu = (props: NavigationMenuProps) => {
             className={clsx(
             //   "px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-900",
               "font-display",
-              "focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+              "focus:outline-hidden focus-visible:ring-3 focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
             )}
           >
             More
@@ -69,7 +69,7 @@ const NavigationMenu = (props: NavigationMenuProps) => {
                 <NavigationMenuPrimitive.Link
                   className={clsx(
                     "w-full px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-900 rounded-md",
-                    "focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+                    "focus:outline-hidden focus-visible:ring-3 focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
                   )}
                   href="projects"
                 >
@@ -86,7 +86,7 @@ const NavigationMenu = (props: NavigationMenuProps) => {
                 <NavigationMenuPrimitive.Link
                   className={clsx(
                     "w-full px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-900 rounded-md",
-                    "focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+                    "focus:outline-hidden focus-visible:ring-3 focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
                   )}
                   href="gallery"
                 >
@@ -119,10 +119,10 @@ const NavigationMenu = (props: NavigationMenuProps) => {
         <NavigationMenuPrimitive.Indicator
           className={clsx(
             "z-10",
-            "top-[100%] flex items-end justify-center h-2 overflow-hidden",
+            "top-full flex items-end justify-center h-2 overflow-hidden",
             "radix-state-visible:animate-fade-in",
             "radix-state-hidden:animate-fade-out",
-            "transition-[width_transform] duration-[250ms] ease-[ease]"
+            "transition-[width_transform] duration-250 ease-[ease]"
           )}
         >
           <div className="top-1 relative bg-white dark:bg-gray-800 w-2 h-2 rotate-45" />
@@ -132,7 +132,7 @@ const NavigationMenu = (props: NavigationMenuProps) => {
       <div
         className={clsx(
           "absolute flex justify-center",
-          "w-[140%] left-[-20%] top-[100%]"
+          "w-[140%] left-[-20%] top-full"
         )}
         style={{
           perspective: "2000px",

@@ -14,14 +14,14 @@ export default async function Home() {
     <>
       <div className="z-10 mx-auto w-full max-w-xl px-5 xl:px-0 h-[calc(100vh-170px)] flex flex-col items-center justify-center">
         <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
+          className="animate-fade-up bg-linear-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-xs text-balance md:text-7xl md:leading-20"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           Hello.
         </h1>
         <h2 className="text-3xl text-center">A closer look offers a kinder view.</h2>
         <p
-          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
+          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 text-balance md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           Tay&apos;s personal website, portfolio and blog
@@ -51,7 +51,7 @@ export default async function Home() {
         </div>
       </div>
       <section>
-      <div className="my-10 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+      <div className="my-10 grid w-full max-w-(--breakpoint-lg) animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         {features.map(({ title, description, demo, fullWidth }) => (
           <Card
             key={title}

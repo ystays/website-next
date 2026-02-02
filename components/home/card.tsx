@@ -20,16 +20,16 @@ export default function Card({
     <div
       className={`relative col-span-1 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md 
       ${large ? "md:col-span-2" : ""}
-      ${tall ? "h-[30rem]" : "h-96"}
+      ${tall ? "h-120" : "h-96"}
       ${fullWidth ? "md:col-span-3" : ""
       }`}
     >
-      <div className={`flex items-center justify-center ${tall ? "h-[25rem]" : "h-60"}`}>{demo}</div>
+      <div className={`flex items-center justify-center ${tall ? "h-100" : "h-60"}`}>{demo}</div>
       <div className="mx-auto max-w-md text-center">
-        <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold [text-wrap:balance] md:text-3xl md:font-normal">
+        <h2 className="bg-linear-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-balance md:text-3xl md:font-normal">
           {title}
         </h2>
-        <div className="prose-sm mt-3 leading-normal text-gray-500 [text-wrap:balance] md:prose min-w-min">
+        <div className="prose-sm mt-3 leading-normal text-gray-500 text-balance md:prose min-w-min">
           <ReactMarkdown
             components={{
               a: ({ node, ...props }) => (
@@ -45,7 +45,7 @@ export default function Card({
                   {...props}
                   // @ts-ignore (to fix "Received `true` for a non-boolean attribute `inline`." warning)
                   inline="true"
-                  className="rounded-sm bg-gray-100 px-1 py-0.5 font-mono font-medium text-gray-800"
+                  className="rounded-xs bg-gray-100 px-1 py-0.5 font-mono font-medium text-gray-800"
                 />
               ),
             }}

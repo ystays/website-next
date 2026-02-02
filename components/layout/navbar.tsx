@@ -27,7 +27,7 @@ export default function NavBar({ session }: { session: Session | null }) {
             : "bg-white/0"
         } z-30 transition-all`}
       >
-        <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between w-full">
+        <div className="mx-5 flex h-16 max-w-(--breakpoint-xl) items-center justify-between w-full">
           <div>
             <Link href="/" className="flex items-center font-display text-2xl">
               <Image
@@ -35,7 +35,7 @@ export default function NavBar({ session }: { session: Session | null }) {
                 alt="logo"
                 width="30"
                 height="30"
-                className="mr-2 rounded-sm"
+                className="mr-2 rounded-xs"
               ></Image>
               <h1>ystays</h1>
             </Link>
@@ -82,7 +82,7 @@ export default function NavBar({ session }: { session: Session | null }) {
             >
               <button
                 onMouseEnter={() => setOpenPopover(!openPopover) }
-                // className="flex w-36 items-center justify-between rounded-md border border-gray-300 px-4 py-2 transition-all duration-75 hover:border-gray-800 focus:outline-none active:bg-gray-100"
+                // className="flex w-36 items-center justify-between rounded-md border border-gray-300 px-4 py-2 transition-all duration-75 hover:border-gray-800 focus:outline-hidden active:bg-gray-100"
                 className="flex items-center font-display"
               >
                 <p>More</p>
