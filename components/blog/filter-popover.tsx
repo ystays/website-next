@@ -4,7 +4,7 @@ import Popover from "@/components/shared/popover";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-export default function FilterPopover({ currentTag }: {currentTag:String}) {
+export default function FilterPopover({ currentTag }: {currentTag:string}) {
     const [openPopover, setOpenPopover] = useState(false);
 
     return (

@@ -6,10 +6,9 @@ import Image from "@/components/home/image-card"
 import getPostMetadata from "../../../components/posts/getPostMetadata";
 import PostPreview from "../../../components/posts/PostPreview";
 import FilterPopover from "@/components/blog/filter-popover";
-import { use } from 'react';
 
 export default async function Blog({ params }: { params: Promise<{ tags: string }> }) {
-    const { tags } = use(params);
+    const { tags } = await params;
     const postMetadata = getPostMetadata();
     const postPreviews = postMetadata.filter((post) => {return post.tags === tags}).map((post) => (
       <PostPreview key={post.slug} {...post} />
