@@ -22,8 +22,8 @@ export const generateStaticParams = async () => {
   }));
 };
 
-const PostPage = async (props: any) => {
-  const slug = props.params.slug;
+const PostPage = async (props: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await props.params;
   const post = await getPostContent(slug);
   return (
     <div className="z-10 w-full max-w-xl px-5 xl:px-0">
