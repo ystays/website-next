@@ -1,8 +1,4 @@
-import Card from "@/components/home/card"
-import ComponentGrid from "@/components/home/component-grid"
-import WebVitals from "@/components/home/web-vitals"
 import Image from "next/image"
-// import Image from "@/components/home/image-card"
 
 export default async function Gallery() {
   return(

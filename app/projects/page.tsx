@@ -1,7 +1,5 @@
 import Card from "@/components/home/card"
-// import ComponentGrid from "@/components/home/component-grid"
 import Image from "next/image"
-// import Image from "@/components/home/image-card"
 
 export default async function Projects() {
     return(

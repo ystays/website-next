@@ -3,8 +3,6 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "../../../components/posts/getPostMetadata";
 import path from "path";
-// import { remark } from "remark";
-// import html from "remark-html";
 
 const getPostContent = async (slug: string) => {
   const folder = path.join(process.cwd(), 'posts/')

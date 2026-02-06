@@ -1,6 +1,5 @@
 import Card from "@/components/home/card"
 import Link from "next/link";
-// import ComponentGrid from "@/components/home/component-grid"
 
 export default async function Projects() {
     return(
