@@ -14,18 +14,16 @@ export default async function About() {
         </div>
       <section>
         <p>Hi. <br/>My name is Yi Sheng Tay.<br/><br/>
-          I&apos;m a 2023 Computer Science graduate from UCLA ...</p>
+          I&apos;m a software engineer and a 2023 Computer Science graduate from UCLA ...</p>
         <small>
-          with an interest in backend development, AI and digital humanities. Previously interned at Intel and Keysight, and has lately been exploring building web apps with the MERN stack. 
+          with an interest in backend development, applied AI and digital humanities.
           <br/>
-          <br/>
-          Searching for a new grad SWE role. Looking for stimulating, collaborative work with a supportive team.
         </small>
         <br/>
         <br/>
         <small>
           (This is my personal website. Check out {' '}
-            <a href="https://linkedin.com/in/yi-sheng-tay">my LinkedIn page</a>.)
+          <a href="https://linkedin.com/in/yi-sheng-tay">my LinkedIn page</a>. Or take a look at my {' '} <a href="./YiShengTay_Resume.pdf">resume</a>.)
         </small>
       </section>
       </div>
