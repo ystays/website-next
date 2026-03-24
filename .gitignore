@@ -41,3 +41,5 @@ next-env.d.ts
 /drafts
 /posts/drafts
 /posts/draft.md
+.pagefind-tmp
+/public/pagefind

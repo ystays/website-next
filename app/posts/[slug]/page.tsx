@@ -25,11 +25,20 @@ const PostPage = async (props: { params: Promise<{ slug: string }> }) => {
   const post = await getPostContent(slug);
   return (
     <div className="z-10 w-full max-w-xl px-5 xl:px-0">
-      <h1 className="text-4xl">{post.data.title}</h1>
-      <p>{post.data.subtitle}</p>
-      <p className="mt-2 text-xs">By: {post.data.author}</p>
-      <p className="mt-2 text-right">{post.data.date}</p>
-      <Markdown className="prose">{post.content}</Markdown>
+      <article data-pagefind-body>
+        <h1
+          className="text-4xl"
+          data-pagefind-meta="title"
+        >
+          {post.data.title}
+        </h1>
+        <p>{post.data.subtitle}</p>
+        <p className="mt-2 text-xs">By: {post.data.author}</p>
+        <p className="mt-2 text-right" data-pagefind-meta="date">
+          {post.data.date}
+        </p>
+        <Markdown className="prose text-gray-800">{post.content}</Markdown>
+      </article>
     </div>
   );
 };

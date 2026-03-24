@@ -11,21 +11,21 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 import { NavigationMenu } from "../navigation-menu";
+import SearchBar from "../shared/searchbar";
 
 export default function NavBar({ session }: { session: Session | null }) {
   const { SignInModal, setShowSignInModal } = useSignInModal();
   const scrolled = useScroll(50);
   const [openPopover, setOpenPopover] = useState(false);
-  
+
   return (
     <>
       <SignInModal />
       <div
-        className={`fixed top-0 w-full flex justify-center ${
-          scrolled
-            ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-            : "bg-white/0"
-        } z-30 transition-all`}
+        className={`fixed top-0 w-full flex justify-center ${scrolled
+          ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
+          : "bg-white/0"
+          } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 max-w-(--breakpoint-xl) items-center justify-between w-full">
           <div>
@@ -53,27 +53,27 @@ export default function NavBar({ session }: { session: Session | null }) {
             <Popover
               content={
                 <div
-                  onMouseLeave={() => setOpenPopover(!openPopover)} 
+                  onMouseLeave={() => setOpenPopover(!openPopover)}
                   className="w-full rounded-md bg-white">
                   <Link href="/projects">
-                  <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
-                    <p>Projects</p>
-                  </button>
+                    <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
+                      <p>Projects</p>
+                    </button>
                   </Link>
                   <Link href="/gallery">
-                  <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
-                    <p>Gallery of Words</p>
-                  </button>
+                    <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
+                      <p>Gallery of Words</p>
+                    </button>
                   </Link>
                   <Link href="/playground">
-                  <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
-                    <p>Playground</p>
-                  </button>
+                    <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
+                      <p>Playground</p>
+                    </button>
                   </Link>
                   <Link href="/posts/creative-manifesto">
-                  <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
-                    <p>Meta [ystays]</p>
-                  </button>
+                    <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
+                      <p>Meta [ystays]</p>
+                    </button>
                   </Link>
                 </div>
               }
@@ -81,7 +81,7 @@ export default function NavBar({ session }: { session: Session | null }) {
               setOpenPopover={setOpenPopover}
             >
               <button
-                onMouseEnter={() => setOpenPopover(!openPopover) }
+                onMouseEnter={() => setOpenPopover(!openPopover)}
                 // className="flex w-36 items-center justify-between rounded-md border border-gray-300 px-4 py-2 transition-all duration-75 hover:border-gray-800 focus:outline-hidden active:bg-gray-100"
                 className="flex items-center font-display"
               >
@@ -92,6 +92,7 @@ export default function NavBar({ session }: { session: Session | null }) {
                 /> */}
               </button>
             </Popover>
+            <SearchBar />
             {session ? (
               <UserDropdown session={session} />
             ) : (
