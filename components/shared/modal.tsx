@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 import { cn } from "@/lib/utils";
 import { Drawer } from "vaul";
 import * as Dialog from "@radix-ui/react-dialog";
+import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import useMediaQuery from "@/lib/hooks/use-media-query";
 
 export default function Modal({
@@ -29,7 +30,11 @@ export default function Modal({
               "fixed bottom-0 left-0 right-0 z-50 mt-24 rounded-t-[10px] border-t border-gray-200 bg-white",
               className,
             )}
+            aria-describedby={undefined}
           >
+            <VisuallyHidden.Root>
+              <Drawer.Title>Dialog</Drawer.Title>
+            </VisuallyHidden.Root>
             <div className="sticky top-0 z-20 flex w-full items-center justify-center rounded-t-[10px] bg-inherit">
               <div className="my-3 h-1 w-12 rounded-full bg-gray-300" />
             </div>
@@ -51,11 +56,15 @@ export default function Modal({
         <Dialog.Content
           onOpenAutoFocus={(e) => e.preventDefault()}
           onCloseAutoFocus={(e) => e.preventDefault()}
+          aria-describedby={undefined}
           className={cn(
-            "animate-scale-in fixed inset-0 z-40 m-auto max-h-fit w-full max-w-md overflow-hidden border border-gray-200 bg-white p-0 shadow-xl md:rounded-2xl",
+            "animate-scale-in fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 w-full max-w-md overflow-hidden rounded-2xl border border-gray-200 bg-white p-0 shadow-xl",
             className,
           )}
         >
+          <VisuallyHidden.Root>
+            <Dialog.Title>Dialog</Dialog.Title>
+          </VisuallyHidden.Root>
           {children}
         </Dialog.Content>
       </Dialog.Portal>

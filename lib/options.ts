@@ -4,7 +4,6 @@ import GoogleProvider from "next-auth/providers/google";
 import { AuthOptions } from "next-auth";
 
 const authOptions: AuthOptions = {
-  // adapter: undefined,
   secret: process.env.NEXTAUTH_SECRET,
   adapter: PrismaAdapter(prisma),
   providers: [
@@ -13,6 +12,10 @@ const authOptions: AuthOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
+  logger: {
+    error: (code, metadata) => console.error("[NextAuth Error]", code, metadata),
+    warn: (code) => console.warn("[NextAuth Warn]", code),
+  },
 };
 
 export default authOptions;
