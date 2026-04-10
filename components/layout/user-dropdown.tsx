@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { signOut } from "next-auth/react";
-import { LayoutDashboard, LogOut, Terminal } from "lucide-react";
+import { CreditCard, LayoutDashboard, LogOut, Terminal } from "lucide-react";
 import Popover from "@/components/shared/popover";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,6 +36,14 @@ export default function UserDropdown({ session }: { session: Session }) {
             >
               <LayoutDashboard className="h-4 w-4" />
               <p className="text-sm">Dashboard</p>
+            </Link>
+            <Link
+              href="/pricing"
+              className="relative flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
+              onClick={() => setOpenPopover(false)}
+            >
+              <CreditCard className="h-4 w-4" />
+              <p className="text-sm">Pricing</p>
             </Link>
             <Link
               href="/terminal"
