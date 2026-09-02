@@ -19,7 +19,7 @@ export default async function Home() {
         >
           Hello.
         </h1>
-        <h2 className="text-3xl text-center">A closer look offers a kinder view.</h2>
+        <h2 className="text-3xl text-center"></h2>
         <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 text-balance md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}

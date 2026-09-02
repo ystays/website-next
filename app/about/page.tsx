@@ -19,7 +19,7 @@ export default async function About() {
         <p>Hi. <br/>My name is Yi Sheng Tay.<br/><br/>
           I&apos;m a software engineer and a 2023 Computer Science graduate from UCLA ...</p>
         <small>
-          with an interest in backend development, applied AI and digital humanities.
+          with an interest in backend development, AI and digital humanities.
           <br/>
         </small>
         <br/>
