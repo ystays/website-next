@@ -1,14 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { ImageResponse } from "@vercel/og";
-
 
 export const alt = "ystays.com";
 export const contentType = "image/png";
 
 export default async function OG() {
-  const sfPro = await fetch(
-    new URL("./fonts/SF-Pro-Display-Medium.otf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+  const [sfPro, logo] = await Promise.all([
+    readFile(
+      path.join(process.cwd(), "app/fonts/SF-Pro-Display-Medium.otf"),
+    ),
+    readFile(path.join(process.cwd(), "public/logo.png")),
+  ]);
 
   return new ImageResponse(
     (
@@ -26,7 +30,7 @@ export default async function OG() {
         }}
       >
         <img
-          src={new URL("../public/logo.png", import.meta.url).toString()}
+          src={`data:image/png;base64,${logo.toString("base64")}`}
           alt="Precedent Logo"
           tw="w-20 h-20 mb-4 opacity-95"
         />
