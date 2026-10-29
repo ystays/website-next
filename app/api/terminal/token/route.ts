@@ -1,10 +1,9 @@
 import { NextResponse } from "next/server";
-import { getServerSession } from "next-auth/next";
+import { auth } from "@/auth";
 import { SignJWT } from "jose";
-import authOptions from "@/lib/options";
 
 export async function GET() {
-  const session = await getServerSession(authOptions);
+  const session = await auth();
   if (!session || session.user?.email !== process.env.ADMIN_EMAIL) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }

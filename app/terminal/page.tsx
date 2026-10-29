@@ -1,6 +1,5 @@
-import { getServerSession } from "next-auth/next";
+import { auth } from "@/auth";
 import { redirect } from "next/navigation";
-import authOptions from "@/lib/options";
 import Terminal from "@/components/terminal/Terminal";
 
 export const metadata = {
@@ -8,7 +7,7 @@ export const metadata = {
 };
 
 export default async function TerminalPage() {
-  const session = await getServerSession(authOptions);
+  const session = await auth();
 
   if (!session || session.user?.email !== process.env.ADMIN_EMAIL) {
     redirect("/");
