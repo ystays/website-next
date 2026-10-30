@@ -1,6 +1,7 @@
 "use client";
 
 import Popover from "@/components/shared/popover";
+import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -11,31 +12,31 @@ export default function FilterPopover({ currentTag }: {currentTag:string}) {
         <Popover
         content={
         <div className="w-full rounded-md bg-white p-2 sm:w-40">
-            <a href="/blog">
+            <Link href="/blog">
                 <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
                 all
                 </button>
-            </a>
-            <a href="/blog/football">
+            </Link>
+            <Link href="/blog/football">
                 <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
                 football/soccer
                 </button>
-            </a>
-            <a href="/blog/programming">
+            </Link>
+            <Link href="/blog/programming">
                 <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
                 programming
                 </button>
-            </a>
-            <a href="/blog/creativity">
+            </Link>
+            <Link href="/blog/creativity">
                 <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
                 creativity
                 </button>
-            </a>
-            <a href="/blog/other">
+            </Link>
+            <Link href="/blog/other">
                 <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
                 other
                 </button>
-            </a>
+            </Link>
         </div>
         }
         openPopover={openPopover}

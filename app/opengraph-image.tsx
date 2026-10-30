@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { ImageResponse } from "@vercel/og";

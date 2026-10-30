@@ -10,6 +10,8 @@ const useLocalStorage = <T>(
     // Retrieve from localStorage
     const item = window.localStorage.getItem(key);
     if (item) {
+      // Reading localStorage after mount is intentional to avoid SSR hydration mismatches.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setStoredValue(JSON.parse(item));
     }
   }, [key]);

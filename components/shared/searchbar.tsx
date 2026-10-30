@@ -51,22 +51,35 @@ export default function SearchBar() {
         if (open) loadPagefind();
     }, [open]);
 
+    const clearSearch = () => {
+        setQuery("");
+        setResults([]);
+        setLoading(false);
+    };
+
+    const handleOpenChange = (nextOpen: boolean) => {
+        setOpen(nextOpen);
+        if (!nextOpen) clearSearch();
+    };
+
+    const handleQueryChange = (value: string) => {
+        setQuery(value);
+        if (!value.trim()) {
+            setResults([]);
+            setLoading(false);
+        }
+    };
+
     // Focus input when dialog opens
     useEffect(() => {
         if (open) {
             setTimeout(() => inputRef.current?.focus(), 50);
-        } else {
-            setQuery("");
-            setResults([]);
         }
     }, [open]);
 
     // Run search when debounced query changes
     useEffect(() => {
-        if (!debouncedQuery.trim()) {
-            setResults([]);
-            return;
-        }
+        if (!debouncedQuery.trim()) return;
         let cancelled = false;
         const runSearch = async () => {
             setLoading(true);
@@ -107,7 +120,7 @@ export default function SearchBar() {
     }, []);
 
     return (
-        <Dialog.Root open={open} onOpenChange={setOpen}>
+        <Dialog.Root open={open} onOpenChange={handleOpenChange}>
             <Dialog.Trigger asChild>
                 <button
                     aria-label="Open search"
@@ -137,13 +150,13 @@ export default function SearchBar() {
                         <input
                             ref={inputRef}
                             value={query}
-                            onChange={(e) => setQuery(e.target.value)}
+                            onChange={(e) => handleQueryChange(e.target.value)}
                             placeholder="Search posts, pages…"
                             className="min-w-0 flex-1 bg-transparent text-sm text-gray-900 placeholder-gray-400 outline-none"
                         />
                         {query && (
                             <button
-                                onClick={() => setQuery("")}
+                                onClick={clearSearch}
                                 className="rounded-md p-0.5 text-gray-400 hover:text-gray-600"
                             >
                                 <X className="h-3.5 w-3.5" />
